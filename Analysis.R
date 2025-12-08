@@ -30,7 +30,7 @@ print(summary(df$Close))
 print(names(df))
 
 # ----------------------------------------------------
-# 3. Split data into two periods based on median date
+# 3. SPLIT DATA INTO TWO LARGE PERIODS
 # ----------------------------------------------------
 median_date <- median(df$Date, na.rm = TRUE)
 
