@@ -37,7 +37,7 @@ median_date <- median(df$Date, na.rm = TRUE)
 df <- df %>%
   mutate(period = ifelse(Date <= median_date, "Period 1", "Period 2"))
 
-# Extract period vectors
+# Extract period vectors (Includes First & second half of the entire Data set)
 period1 <- df %>% filter(period == "Period 1") %>% pull(Close)
 period2 <- df %>% filter(period == "Period 2") %>% pull(Close)
 
