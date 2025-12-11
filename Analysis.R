@@ -63,6 +63,7 @@ print(t_res)
 # 6. PLOTS
 # ----------------------------------------------------
 
+# Following are the appropriate plots:
 
 # Full time-series plot
 p1 <- ggplot(df, aes(x = Date, y = Close, color = period)) +
